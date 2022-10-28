@@ -28,7 +28,7 @@ namespace MutationDemo
                 new ArgumentException("You can't spend 0");
             }
             _transactions.Add(-1 * amount);
-            Balance += amount;
+            Balance -= amount;
         }
 
     }
