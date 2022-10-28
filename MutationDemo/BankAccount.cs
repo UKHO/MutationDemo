@@ -7,6 +7,7 @@ namespace MutationDemo
     {
 
         private int _balance;
+        private List<int> _transactions = new List<int>();
 
         public int Balance
         {
@@ -14,7 +15,10 @@ namespace MutationDemo
             private set => _balance = value;
         }
 
-        private List<int> _transactions = new List<int>();
+        public List<int> Transactions
+        {
+            get => new List<int>(_transactions);
+        }
 
         public BankAccount(int openingBalance = 0)
         {
