@@ -4,6 +4,8 @@ This repo contains some simple classes to illustrate the value of mutation testi
 
 The MutationDemoUnitTests.BankAccountTests contains some tests against the BankAccount class.
 
+Some tests are initially deliberately commented out
+
 ## Instructions
 
 - Install Stryker for .Net as per its [getting started instructions](https://stryker-mutator.io/docs/stryker-net/getting-started/).
