@@ -30,7 +30,7 @@ namespace MutationDemo
         {
             if (amount == 0)
             {
-                new ArgumentException("You can't spend 0");
+                throw new ArgumentException("You can't spend 0");
             }
             _transactions.Add(-1 * amount);
             Balance -= amount;
@@ -40,7 +40,7 @@ namespace MutationDemo
         {
             if (amount == 0)
             {
-                new ArgumentException("you can't deposit 0");
+                throw new ArgumentException("you can't deposit 0");
             }
             _transactions.Add(amount);
             Balance += amount;
